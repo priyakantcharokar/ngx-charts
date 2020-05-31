@@ -1,39 +1,7 @@
 {
-  "name": "@swimlane/ngx-charts",
-  "version": "14.0.0",
-  "description": "Declarative Charting Framework for Angular",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/swimlane/ngx-charts.git"
-  },
-  "keywords": [
-    "angular",
-    "angularjs",
-    "charts",
-    "charting",
-    "angular",
-    "d3",
-    "d3.js",
-    "d3js",
-    "viz",
-    "graph",
-    "svg",
-    "dataviz",
-    "data visualization",
-    "viz",
-    "graph"
-  ],
-  "author": "Swimlane",
-  "maintainers": [
-    "Marjan Georgiev",
-    "Jayson Harshbarger",
-    "Luis Bello"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/swimlane/ngx-charts/issues"
-  },
-  "homepage": "https://github.com/swimlane/ngx-charts#readme",
+  "name": "rlms-mis",
+  "version": "0.0.1",
+  "description": "MIS data for RLMS",
   "peerDependencies": {
     "@angular/animations": "~9.1.1",
     "@angular/cdk": "^9.2.0",
