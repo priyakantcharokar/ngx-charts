@@ -9,42 +9,42 @@ import {
 
 export const single: SingleSeries = [
   {
-    name: 'Germany',
+    name: 'Maharashtra',
     value: 40632,
     extra: {
       code: 'de'
     }
   },
   {
-    name: 'United States',
+    name: 'Madhya Pradesh',
     value: 50000,
     extra: {
       code: 'us'
     }
   },
   {
-    name: 'France',
+    name: 'Orrisa',
     value: 36745,
     extra: {
       code: 'fr'
     }
   },
   {
-    name: 'United Kingdom',
+    name: 'Bihar',
     value: 36240,
     extra: {
       code: 'uk'
     }
   },
   {
-    name: 'Spain',
+    name: 'Uttar Pradesh',
     value: 33000,
     extra: {
       code: 'es'
     }
   },
   {
-    name: 'Italy',
+    name: 'Kerala',
     value: 35800,
     extra: {
       code: 'it'
@@ -54,7 +54,7 @@ export const single: SingleSeries = [
 
 export const multi: MultiSeries = [
   {
-    name: 'Germany',
+    name: 'Maharashtra',
     series: [
       {
         name: '2010',
@@ -80,7 +80,7 @@ export const multi: MultiSeries = [
     ]
   },
   {
-    name: 'United States',
+    name: 'Kerala',
     series: [
       {
         name: '2010',
@@ -106,7 +106,7 @@ export const multi: MultiSeries = [
     ]
   },
   {
-    name: 'France',
+    name: 'Madhya Pradesh',
     series: [
       {
         name: '2010',
@@ -132,7 +132,7 @@ export const multi: MultiSeries = [
     ]
   },
   {
-    name: 'United Kingdom',
+    name: 'Orrisa',
     series: [
       {
         name: '2010',
@@ -216,7 +216,7 @@ export const fiscalYearReport: MultiSeries = [
 
 export const bubble: BubbleChartMultiSeries = [
   {
-    name: 'Germany',
+    name: 'Maharashtra',
     series: [
       {
         name: '2010',
@@ -239,7 +239,7 @@ export const bubble: BubbleChartMultiSeries = [
     ]
   },
   {
-    name: 'United States',
+    name: 'Kerala',
     series: [
       {
         name: '2010',
@@ -262,7 +262,7 @@ export const bubble: BubbleChartMultiSeries = [
     ]
   },
   {
-    name: 'France',
+    name: 'Madhya Pradesh',
     series: [
       {
         name: '2010',
@@ -285,7 +285,7 @@ export const bubble: BubbleChartMultiSeries = [
     ]
   },
   {
-    name: 'United Kingdom',
+    name: 'Orrisa',
     series: [
       {
         name: '2010',
@@ -313,14 +313,14 @@ export function generateGraph(nodeCount: number) {
   const nodes = [];
   const links = [];
   for (let i = 0; i < nodeCount; i++) {
-    const country = countries[Math.floor(Math.random() * countries.length)];
+    const Circle = countries[Math.floor(Math.random() * countries.length)];
     nodes.push({
-      value: country.name
+      value: Circle.name
     });
     for (let j = 0; j < nodes.length - 1; j++) {
       if (Math.random() < 0.03) {
         links.push({
-          source: country,
+          source: Circle,
           target: nodes[j].value
         });
       }
@@ -360,9 +360,9 @@ export function generateData(seriesLength: number, includeMinMaxRange: boolean, 
   }
 
   for (let i = 0; i < seriesLength; i++) {
-    const country = countries[Math.floor(Math.random() * countries.length)];
+    const Circle = countries[Math.floor(Math.random() * countries.length)];
     const series: Series = {
-      name: country.name,
+      name: Circle.name,
       series: []
     };
 

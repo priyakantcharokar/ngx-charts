@@ -1,23 +1,23 @@
 export let lineChart: any = [
   {
     value: 50,
-    name: 'USA'
+    name: 'Orrisa'
   },
   {
     value: 80,
-    name: 'United Kingdom'
+    name: 'Madhya Pradesh'
   },
   {
     value: 85,
-    name: 'France'
+    name: 'Kerala'
   },
   {
     value: 90,
-    name: 'Japan'
+    name: 'Maharashtra'
   },
   {
     value: 100,
-    name: 'China'
+    name: 'Bihar'
   }
 ];
 
@@ -26,24 +26,24 @@ export let lineChartSeries = [
     name: 'Tablets',
     series: [
       {
-        name: 'USA',
+        name: 'Orrisa',
         value: 50
       },
       {
         value: 80,
-        name: 'United Kingdom'
+        name: 'Madhya Pradesh'
       },
       {
         value: 85,
-        name: 'France'
+        name: 'Kerala'
       },
       {
         value: 90,
-        name: 'Japan'
+        name: 'Maharashtra'
       },
       {
         value: 100,
-        name: 'China'
+        name: 'Bihar'
       }
     ]
   },
@@ -52,23 +52,23 @@ export let lineChartSeries = [
     series: [
       {
         value: 10,
-        name: 'USA'
+        name: 'Orrisa'
       },
       {
         value: 20,
-        name: 'United Kingdom'
+        name: 'Madhya Pradesh'
       },
       {
         value: 30,
-        name: 'France'
+        name: 'Kerala'
       },
       {
         value: 40,
-        name: 'Japan'
+        name: 'Maharashtra'
       },
       {
         value: 10,
-        name: 'China'
+        name: 'Bihar'
       }
     ]
   },
@@ -77,23 +77,23 @@ export let lineChartSeries = [
     series: [
       {
         value: 2,
-        name: 'USA'
+        name: 'Orrisa'
       },
       {
         value: 4,
-        name: 'United Kingdom'
+        name: 'Madhya Pradesh'
       },
       {
         value: 20,
-        name: 'France'
+        name: 'Kerala'
       },
       {
         value: 30,
-        name: 'Japan'
+        name: 'Maharashtra'
       },
       {
         value: 35,
-        name: 'China'
+        name: 'Bihar'
       }
     ]
   }
@@ -101,23 +101,23 @@ export let lineChartSeries = [
 
 export let barChart: any = [
   {
-    name: 'USA',
+    name: 'Orrisa',
     value: 50000
   },
   {
-    name: 'United Kingdom',
+    name: 'Madhya Pradesh',
     value: 30000
   },
   {
-    name: 'France',
+    name: 'Kerala',
     value: 10000
   },
   {
-    name: 'Japan',
+    name: 'Maharashtra',
     value: 0
   },
   {
-    name: 'China',
+    name: 'Bihar',
     value: 500
   }
 ];

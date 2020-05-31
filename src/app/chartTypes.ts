@@ -3,7 +3,7 @@ const chartGroups = [
     name: 'Bar Charts',
     charts: [
       {
-        name: 'Vertical Bar Chart',
+        name: 'Loans by Circle - Vertical',
         selector: 'bar-vertical',
         inputFormat: 'singleSeries',
         options: [
@@ -36,7 +36,7 @@ const chartGroups = [
         ]
       },
       {
-        name: 'Horizontal Bar Chart',
+        name: 'Loans by Circle - Horizontal',
         selector: 'bar-horizontal',
         inputFormat: 'singleSeries',
         options: [
@@ -68,8 +68,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'Country',
-          xAxisLabel: 'GDP Per Capita'
+          yAxisLabel: 'Circle',
+          xAxisLabel: 'Loans'
         }
       },
       {
@@ -140,8 +140,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'Country',
-          xAxisLabel: 'GDP Per Capita'
+          yAxisLabel: 'Circle',
+          xAxisLabel: 'Loans'
         }
       },
       {
@@ -208,8 +208,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'Country',
-          xAxisLabel: 'GDP Per Capita'
+          yAxisLabel: 'Circle',
+          xAxisLabel: 'Loans'
         }
       },
       {
@@ -242,8 +242,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'Normalized GDP Per Capita',
-          xAxisLabel: 'Country'
+          yAxisLabel: 'Normalized Loans',
+          xAxisLabel: 'Circle'
         }
       },
       {
@@ -276,8 +276,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'Country',
-          xAxisLabel: 'Normalized GDP Per Capita'
+          yAxisLabel: 'Circle',
+          xAxisLabel: 'Normalized Loans'
         }
       }
     ]
@@ -359,8 +359,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'GDP Per Capita',
-          xAxisLabel: 'Census Date',
+          yAxisLabel: 'Loans',
+          xAxisLabel: 'Circle',
           linearScale: true
         }
       },
@@ -391,8 +391,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'GDP Per Capita',
-          xAxisLabel: 'Census Date',
+          yAxisLabel: 'Loans',
+          xAxisLabel: 'Circle',
           linearScale: true
         }
       },
@@ -431,8 +431,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'GDP Per Capita',
-          xAxisLabel: 'Census Date',
+          yAxisLabel: 'Loans',
+          xAxisLabel: 'Circle',
           linearScale: true
         }
       },
@@ -471,8 +471,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'GDP Per Capita',
-          xAxisLabel: 'Census Date',
+          yAxisLabel: 'Loans',
+          xAxisLabel: 'Circle',
           linearScale: true
         }
       },
@@ -507,8 +507,8 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'Normalized GDP Per Capita',
-          xAxisLabel: 'Census Date',
+          yAxisLabel: 'Normalized Loans',
+          xAxisLabel: 'Circle',
           linearScale: true
         }
       }
@@ -551,7 +551,7 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          xAxisLabel: 'Census Date',
+          xAxisLabel: 'Circle',
           yAxisLabel: 'Life expectancy [years]'
         }
       },
@@ -581,8 +581,8 @@ const chartGroups = [
           'max'
         ],
         defaults: {
-          yAxisLabel: 'Census Date',
-          cAxisLabel: 'Country'
+          yAxisLabel: 'Circle',
+          cAxisLabel: 'Circle'
         }
       },
       {
@@ -808,7 +808,7 @@ const chartGroups = [
           'maxYAxisTickLength'
         ],
         defaults: {
-          yAxisLabel: 'GDP Per Capita',
+          yAxisLabel: 'Loans',
           xAxisLabel: 'Year',
           linearScale: false
         }

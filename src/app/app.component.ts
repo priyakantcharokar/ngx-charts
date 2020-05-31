@@ -80,9 +80,9 @@ export class AppComponent implements OnInit {
   showXAxisLabel = true;
   tooltipDisabled = false;
   showText = true;
-  xAxisLabel = 'Country';
+  xAxisLabel = 'Circle';
   showYAxisLabel = true;
-  yAxisLabel = 'GDP Per Capita';
+  yAxisLabel = 'Loans';
   showGridLines = true;
   innerPadding = '10%';
   barPadding = 8;
@@ -306,7 +306,7 @@ export class AppComponent implements OnInit {
 
     this.gaugeValue = this.gaugeMin + Math.floor(Math.random() * (this.gaugeMax - this.gaugeMin));
 
-    const country = this.countries[Math.floor(Math.random() * this.countries.length)];
+    const Circle = this.countries[Math.floor(Math.random() * this.countries.length)];
     const add = Math.random() < 0.7;
     const remove = Math.random() < 0.5;
 
@@ -347,14 +347,14 @@ export class AppComponent implements OnInit {
     if (add) {
       // single
       const entry = {
-        name: country.name,
+        name: Circle.name,
         value: Math.floor(10000 + Math.random() * 50000)
       };
       this.single = [...this.single, entry];
 
       // multi
       const multiEntry = {
-        name: country.name,
+        name: Circle.name,
         series: [
           {
             name: '1990',
@@ -374,10 +374,10 @@ export class AppComponent implements OnInit {
       this.multi = [...this.multi, multiEntry];
 
       // graph
-      const node = { value: country.name };
+      const node = { value: Circle.name };
       const nodes = [...this.graph.nodes, node];
       const link = {
-        source: country.name,
+        source: Circle.name,
         target: nodes[Math.floor(Math.random() * (nodes.length - 1))].value
       };
       const links = [...this.graph.links, link];
@@ -386,7 +386,7 @@ export class AppComponent implements OnInit {
       // bubble
       const bubbleYear = Math.floor((2010 - 1990) * Math.random() + 1990);
       const bubbleEntry = {
-        name: country.name,
+        name: Circle.name,
         series: [
           {
             name: '' + bubbleYear,
@@ -448,8 +448,8 @@ export class AppComponent implements OnInit {
     }
 
     this.linearScale = false;
-    this.yAxisLabel = 'GDP Per Capita';
-    this.xAxisLabel = 'Country';
+    this.yAxisLabel = 'Loans';
+    this.xAxisLabel = 'Circle';
 
     this.width = 700;
     this.height = 300;
@@ -625,7 +625,7 @@ export class AppComponent implements OnInit {
   }
 
   gdpLabelFormatting(c) {
-    return `${escapeLabel(c.label)}<br/><small class="number-card-label">GDP Per Capita</small>`;
+    return `${escapeLabel(c.label)}<br/><small class="number-card-label">Loans</small>`;
   }
 
   statusLabelFormat(c): string {
@@ -697,8 +697,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-  getFlag(country) {
-    return this.countries.find(c => c.name === country).emoji;
+  getFlag(Circle) {
+    return this.countries.find(c => c.name === Circle).emoji;
   }
 
   onFilter(event) {
