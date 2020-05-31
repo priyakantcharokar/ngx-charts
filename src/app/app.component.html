@@ -1119,11 +1119,11 @@
         <option [value]="'light'">Light</option>
       </select>
 
-      <h3 (click)="dataVisible = !dataVisible" style="cursor: pointer;">
+      <h3 *ngIf="showData" (click)="dataVisible = !dataVisible" style="cursor: pointer;">
         <span [class.arrow-down]="dataVisible" [class.arrow-right]="!dataVisible"> </span>
         <strong>Data</strong>
       </h3>
-      <div [hidden]="!dataVisible" style="margin-left: 10px;">
+      <div *ngIf="showData" [hidden]="!dataVisible" style="margin-left: 10px;">
         <pre *ngIf="chart.inputFormat === 'singleSeries'">{{ single | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'multiSeries' && !linearScale">{{ multi | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'multiSeriesNegative' && !linearScale">{{ fiscalYearReport | json }}</pre>
@@ -1147,7 +1147,7 @@
           </label>
         </div>
       </div>
-      <div>
+      <div *ngIf="showDimensions" >
         <h3 (click)="dimVisible = !dimVisible" style="cursor: pointer;">
           <span [class.arrow-down]="dimVisible" [class.arrow-right]="!dimVisible"> </span>
           <strong>Dimensions</strong>
@@ -1167,11 +1167,11 @@
           </div>
         </div>
       </div>
-      <h3 (click)="colorVisible = !colorVisible" style="cursor: pointer;">
+      <h3 *ngIf="showColorSchemes" (click)="colorVisible = !colorVisible" style="cursor: pointer;">
         <span [class.arrow-down]="colorVisible" [class.arrow-right]="!colorVisible"> </span>
         <strong>Color Scheme</strong>
       </h3>
-      <select
+      <select *ngIf="showColorSchemes"
         [hidden]="!colorVisible"
         style="margin-left: 10px;"
         [ngModel]="selectedColorScheme"
@@ -1179,9 +1179,9 @@
       >
         <option *ngFor="let scheme of colorSets" [value]="scheme.name">{{ scheme.name }}</option>
       </select>
-
+<div *ngIf="showOptions">
       <select
-        *ngIf="chart.options.includes('schemeType')"
+        *ngIf="chart.options.includes('schemeType') "
         [hidden]="!colorVisible"
         style="margin-left: 10px;"
         [ngModel]="schemeType"
@@ -1536,4 +1536,5 @@
       <h3><a href="https://swimlane.gitbooks.io/ngx-charts/content/" target="_blank">Documentation</a></h3>
     </div>
   </div>
+</div>
 </main>
